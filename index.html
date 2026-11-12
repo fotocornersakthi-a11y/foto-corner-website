@@ -49,6 +49,17 @@
     .float-wa{position:fixed;right:18px;bottom:18px;background:#20b75a;color:white;padding:13px 18px;border-radius:30px;font-weight:bold;box-shadow:0 5px 18px #0003;z-index:8}
     @media(max-width:760px){.brand img{width:170px}.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 22px}.hero-mark{width:210px}.links{gap:11px;font-size:12px}.brand{font-size:16px}.services{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}}
     @media(max-width:460px){.links{display:none}.services{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr}.gallery-tile{min-height:145px}}
+  
+    .enq{margin-top:30px;border:1px solid #eee;border-radius:12px;padding:26px;background:#fff;box-shadow:0 8px 25px #11111108}
+    .enq h3{margin:0 0 4px;font-size:22px}.enq .sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+    .enq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .enq label{display:block;font-size:13px;font-weight:bold;margin-bottom:5px}
+    .enq input,.enq select,.enq textarea{width:100%;padding:13px 14px;border:1px solid #cfd2da;border-radius:6px;font:inherit;font-size:15px;color:var(--ink);background:#fff}
+    .enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+    .enq .full{grid-column:1/-1}.enq textarea{min-height:130px;resize:vertical}
+    .enq button{border:0;cursor:pointer;background:#25d366;color:#fff;padding:14px 22px;border-radius:6px;font-weight:bold;font-size:15px;width:100%}
+    .enq .note{font-size:12px;color:var(--muted);margin:10px 0 0;text-align:center}
+    @media(max-width:620px){.enq-grid{grid-template-columns:1fr}.enq{padding:20px}}
   </style>
 </head>
 <body>
@@ -82,14 +93,20 @@
     <section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What we do</div><h2>Our Photography Services</h2><p>Choose a service and contact us for availability and package details.</p></div>
       <div class="services">
         <article class="service"><div class="ico">💍</div><h3>Wedding Photography</h3><p>Beautiful coverage of your special day and its unforgettable moments.</p></article>
+        <article class="service"><div class="ico">🥂</div><h3>Reception Photography</h3><p>Elegant coverage of your reception, guests and celebrations.</p></article>
+        <article class="service"><div class="ico">❤️</div><h3>Pre-Wedding Photography</h3><p>Personal, romantic photos that tell your story.</p></article>
+        <article class="service"><div class="ico">💑</div><h3>Engagement Shoots</h3><p>Celebrate your engagement with beautiful, natural portraits.</p></article>
+        <article class="service"><div class="ico">📸</div><h3>Candid Photography</h3><p>Natural, unposed moments captured as they happen.</p></article>
+        <article class="service"><div class="ico">🎞️</div><h3>Cinematic Films &amp; Drone</h3><p>Wedding films, event videography and aerial coverage, subject to location permissions.</p></article>
         <article class="service"><div class="ico">🌿</div><h3>Outdoor Photoshoot</h3><p>Natural portraits and creative outdoor sessions.</p></article>
+        <article class="service"><div class="ico">🤰</div><h3>Maternity Photography</h3><p>Gentle, beautiful portraits to celebrate this special time.</p></article>
+        <article class="service"><div class="ico">🧒</div><h3>Kids Indoor &amp; Outdoor</h3><p>Fun, lively portraits of children in the studio or outdoors.</p></article>
+        <article class="service"><div class="ico">🧸</div><h3>Baby Photoshoot &amp; Props</h3><p>Adorable portraits of your little one with safe, cute props.</p></article>
+        <article class="service"><div class="ico">🌸</div><h3>Puberty Photoshoot</h3><p>Traditional and modern portraits for this milestone ceremony.</p></article>
+        <article class="service"><div class="ico">🎂</div><h3>Birthday &amp; Events</h3><p>Capture celebrations, gatherings and milestone events.</p></article>
         <article class="service"><div class="ico">✨</div><h3>Photo Editing</h3><p>Careful retouching and enhancement for your photographs.</p></article>
-        <article class="service"><div class="ico">❤️</div><h3>Pre-wedding Shoot</h3><p>Personal, romantic photos that tell your story.</p></article>
-        <article class="service"><div class="ico">🎂</div><h3>Birthday & Events</h3><p>Capture celebrations, gatherings and milestone events.</p></article>
-        <article class="service"><div class="ico">👶</div><h3>Baby Photoshoot</h3><p>Adorable portraits of your little one's precious moments.</p></article>
-        <article class="service"><div class="ico">🪪</div><h3>Passport Size Photos</h3><p>Convenient passport and ID photographs.</p></article>
         <article class="service"><div class="ico">📚</div><h3>Wedding Albums</h3><p>Printed albums to revisit your memories for years.</p></article>
-        <article class="service"><div class="ico">🎥</div><h3>Videography & Drone</h3><p>Event films and aerial coverage, subject to location permissions.</p></article>
+        <article class="service"><div class="ico">🪪</div><h3>Passport Size Photos</h3><p>Convenient passport and ID photographs.</p></article>
       </div>
     </div></section>
 
@@ -119,11 +136,46 @@
           <p style="font-size:13px;margin-top:18px">Instagram: <a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">View our Instagram page</a></p>
         </div>
       </div>
+      <div class="enq" id="enquiry">
+        <h3>Send us an enquiry</h3>
+        <p class="sub">Fill in your details and tap the button. Your message opens in WhatsApp, ready to send to us.</p>
+        <form id="enqForm" novalidate>
+          <div class="enq-grid">
+            <div><label for="eName">Name *</label><input id="eName" type="text" autocomplete="name" placeholder="Your name" required></div>
+            <div><label for="ePhone">Phone *</label><input id="ePhone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your phone number" required></div>
+            <div><label for="eEmail">Email</label><input id="eEmail" type="email" autocomplete="email" placeholder="Your email (optional)"></div>
+            <div><label for="eService">Service</label><select id="eService"><option value="">Select a service (optional)</option><option>Wedding Photography</option><option>Reception Photography</option><option>Pre-Wedding Photography</option><option>Engagement Shoots</option><option>Candid Photography</option><option>Cinematic Films &amp; Drone</option><option>Outdoor Photoshoot</option><option>Maternity Photography</option><option>Kids Indoor &amp; Outdoor</option><option>Baby Photoshoot &amp; Props</option><option>Puberty Photoshoot</option><option>Birthday &amp; Events</option><option>Photo Editing</option><option>Wedding Albums</option><option>Passport Size Photos</option></select></div>
+            <div class="full"><label for="eMsg">Message</label><textarea id="eMsg" placeholder="Tell us your event date, place and what you need"></textarea></div>
+            <div class="full"><button type="submit">Send on WhatsApp</button><p class="note" id="enqNote">* Name and phone are required.</p></div>
+          </div>
+        </form>
+      </div>
       <div style="margin-top:30px;border-radius:10px;overflow:hidden;border:1px solid #eee"><iframe title="FOTO CORNER location on Google Maps" src="https://www.google.com/maps?q=FOTO+CORNER+Moolakulam+Puducherry&amp;ll=11.9310587,79.7862096&amp;z=16&amp;output=embed" width="100%" height="320" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
     </div></section>
   </main>
   <footer>© <span id="year"></span> FOTO CORNER DIGITAL STUDIO · Puducherry · All rights reserved.</footer>
   <a class="float-wa" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER" aria-label="Chat on WhatsApp">WhatsApp</a>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  var f=document.getElementById('enqForm'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('eName').value.trim(),
+        p=document.getElementById('ePhone').value.trim(),
+        m=document.getElementById('eEmail').value.trim(),
+        sv=document.getElementById('eService').value,
+        t=document.getElementById('eMsg').value.trim(),
+        note=document.getElementById('enqNote');
+    if(!n||!p){note.textContent='Please enter your name and phone number.';note.style.color='#c0392b';return;}
+    note.style.color='';note.textContent='Opening WhatsApp... tap Send there to confirm.';
+    var lines=['Hello FOTO CORNER, I would like to enquire.','','Name: '+n,'Phone: '+p];
+    if(m) lines.push('Email: '+m);
+    if(sv) lines.push('Service: '+sv);
+    if(t) lines.push('Message: '+t);
+    window.location.href='https://wa.me/919600879738?text='+encodeURIComponent(lines.join('\n'));
+  });
+})();
+</script>
 </body>
 </html>
