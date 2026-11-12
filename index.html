@@ -60,6 +60,11 @@
     .enq button{border:0;cursor:pointer;background:#25d366;color:#fff;padding:14px 22px;border-radius:6px;font-weight:bold;font-size:15px;width:100%}
     .enq .note{font-size:12px;color:var(--muted);margin:10px 0 0;text-align:center}
     @media(max-width:620px){.enq-grid{grid-template-columns:1fr}.enq{padding:20px}}
+  
+    .rev{margin-top:30px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-radius:12px;padding:26px;background:var(--dark);color:#fff}
+    .rev h3{margin:0 0 6px;font-size:22px;color:#f0c477}.rev p{margin:0 0 16px;color:#e4e4e8;font-size:15px}
+    .rev img{width:130px;height:130px;border-radius:10px;background:#fff;padding:6px;flex:none}
+    @media(max-width:620px){.rev{flex-direction:column;align-items:flex-start;padding:22px}.rev img{display:none}}
   </style>
 </head>
 <body>
@@ -124,19 +129,7 @@
     </div></section>
 
     <section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Let's create memories</div><h2>Contact & Booking</h2><p>Send us a message with your event date and the service you need.</p></div>
-      <div class="contact-grid">
-        <div class="contact-card"><h3>Visit Our Studio</h3>
-          <div class="contact-row"><b>Address</b>No. 10/A, Villianur Main Road, Opp. NEXA Car Showroom, Mothilal Nagar, Moolakulam, Puducherry – 605010.</div>
-          <div class="contact-row"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=FOTO+CORNER+Moolakulam+Puducherry&destination_place_id=ChIJ06f8nKphUzoRVFNMFI27zfk" target="_blank" rel="noopener">Get Directions</a> <a class="btn outline" style="color:#171923;border-color:#171923" href="https://www.google.com/maps/search/?api=1&query=FOTO+CORNER+Moolakulam+Puducherry&query_place_id=ChIJ06f8nKphUzoRVFNMFI27zfk" target="_blank" rel="noopener">View on Google Maps</a></div>
-          <div class="contact-row"><b>Phone / WhatsApp</b><a href="tel:+919600879738">+91 96008 79738</a></div>
-          <div class="contact-row"><b>Instagram</b><a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">@fotocorner_py</a></div>
-        </div>
-        <div class="contact-card"><h3>Ready to book?</h3><p>Tap below to start a WhatsApp conversation. We can discuss your requirements and share package details.</p>
-          <a class="btn primary" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER%2C%20I%20would%20like%20to%20know%20about%20your%20photography%20packages.">Message on WhatsApp</a>
-          <p style="font-size:13px;margin-top:18px">Instagram: <a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">View our Instagram page</a></p>
-        </div>
-      </div>
-      <div class="enq" id="enquiry">
+      <div class="enq" id="enquiry" style="margin-top:0;margin-bottom:30px">
         <h3>Send us an enquiry</h3>
         <p class="sub">Fill in your details and tap the button. Your message opens in WhatsApp, ready to send to us.</p>
         <form id="enqForm" novalidate>
@@ -149,6 +142,23 @@
             <div class="full"><button type="submit">Send on WhatsApp</button><p class="note" id="enqNote">* Name and phone are required.</p></div>
           </div>
         </form>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Visit Our Studio</h3>
+          <div class="contact-row"><b>Address</b>No. 10/A, Villianur Main Road, Opp. NEXA Car Showroom, Mothilal Nagar, Moolakulam, Puducherry – 605010.</div>
+          <div class="contact-row"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=FOTO+CORNER+Moolakulam+Puducherry&destination_place_id=ChIJ06f8nKphUzoRVFNMFI27zfk" target="_blank" rel="noopener">Get Directions</a> <a class="btn outline" style="color:#171923;border-color:#171923" href="https://www.google.com/maps/search/?api=1&query=FOTO+CORNER+Moolakulam+Puducherry&query_place_id=ChIJ06f8nKphUzoRVFNMFI27zfk" target="_blank" rel="noopener">View on Google Maps</a></div>
+          <div class="contact-row"><b>Phone / WhatsApp</b><a href="tel:+919600879738">+91 96008 79738</a></div>
+          <div class="contact-row"><b>Instagram</b><a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">@fotocorner_py</a></div>
+        </div>
+        <div class="contact-card"><h3>Ready to book?</h3><p>Tap below to start a WhatsApp conversation. We can discuss your requirements and share package details.</p>
+          <a class="btn primary" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER%2C%20I%20would%20like%20to%20know%20about%20your%20photography%20packages.">Message on WhatsApp</a>
+          <p style="font-size:13px;margin-top:18px">Instagram: <a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">View our Instagram page</a></p>
+        </div>
+      </div>
+      <div class="rev" id="review">
+        <div><h3>Loved your photos? Leave us a review</h3><p>Your Google review helps other families and couples find us. It takes less than a minute.</p>
+          <a class="btn primary" href="https://search.google.com/local/writereview?placeid=ChIJ06f8nKphUzoRVFNMFI27zfk" target="_blank" rel="noopener">★ Review us on Google</a></div>
+        <img src="data:image/png;base64,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" alt="Scan this QR code to review FOTO CORNER on Google">
       </div>
       <div style="margin-top:30px;border-radius:10px;overflow:hidden;border:1px solid #eee"><iframe title="FOTO CORNER location on Google Maps" src="https://www.google.com/maps?q=FOTO+CORNER+Moolakulam+Puducherry&amp;ll=11.9310587,79.7862096&amp;z=16&amp;output=embed" width="100%" height="320" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
     </div></section>
