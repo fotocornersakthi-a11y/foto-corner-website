@@ -65,6 +65,9 @@
     .rev h3{margin:0 0 6px;font-size:22px;color:#f0c477}.rev p{margin:0 0 16px;color:#e4e4e8;font-size:15px}
     .rev img{width:130px;height:130px;border-radius:10px;background:#fff;padding:6px;flex:none}
     @media(max-width:620px){.rev{flex-direction:column;align-items:flex-start;padding:22px}.rev img{display:none}}
+  
+    .float-call{position:fixed;left:18px;bottom:18px;background:#e5ad54;color:#111;padding:13px 18px;border-radius:30px;font-weight:bold;box-shadow:0 5px 18px #0003;z-index:8;text-decoration:none}
+    .btn.callbtn{background:#111;color:#fff;margin-left:8px}
   </style>
 </head>
 <body>
@@ -151,7 +154,7 @@
           <div class="contact-row"><b>Instagram</b><a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">@fotocorner_py</a></div>
         </div>
         <div class="contact-card"><h3>Ready to book?</h3><p>Tap below to start a WhatsApp conversation. We can discuss your requirements and share package details.</p>
-          <a class="btn primary" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER%2C%20I%20would%20like%20to%20know%20about%20your%20photography%20packages.">Message on WhatsApp</a>
+          <a class="btn primary" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER%2C%20I%20would%20like%20to%20know%20about%20your%20photography%20packages.">Message on WhatsApp</a> <a class="btn primary callbtn" href="tel:+919600879738">Call Now</a>
           <p style="font-size:13px;margin-top:18px">Instagram: <a href="https://www.instagram.com/fotocorner_py/" target="_blank" rel="noopener">View our Instagram page</a></p>
         </div>
       </div>
@@ -165,6 +168,7 @@
   </main>
   <footer>© <span id="year"></span> FOTO CORNER DIGITAL STUDIO · Puducherry · All rights reserved.</footer>
   <a class="float-wa" href="https://wa.me/919600879738?text=Hello%20FOTO%20CORNER" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <a class="float-call" href="tel:+919600879738" aria-label="Call FOTO CORNER">Call Now</a>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 <script>
 (function(){
